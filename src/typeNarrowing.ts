@@ -64,3 +64,32 @@ function serveOrder(item: ChaiOrder | string){
     }
     return `Serving custom chai ${item}`
 }
+
+
+type MasalaChai = {type: "masala"; spicelevel: number};
+type GingerChai = {type: "Ginger"; amount: number};
+type ElichiChai = {type: "Elichi"; aroma: number};
+
+type Chai = MasalaChai | GingerChai | ElichiChai
+
+
+function MakeChai(order: Chai){
+    switch (order.type) {
+        case "masala":
+            return `Masala Chai`
+            break;
+        case "Elichi":
+            return `Elichi Chai`
+            break;
+        case "Ginger":
+            return `Ginger Chai`
+            break;
+    }  
+}
+
+
+function brew(order: MasalaChai | GingerChai){
+    if("spicelevel" in order){
+        
+    }
+}
