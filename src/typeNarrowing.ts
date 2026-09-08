@@ -88,8 +88,12 @@ function MakeChai(order: Chai){
 }
 
 
-function brew(order: MasalaChai | GingerChai){
-    if("spicelevel" in order){
+// function brew(order: MasalaChai | GingerChai){
+//     if("spicelevel" in order){
         
-    }
-}
+//     }
+// }
+
+// function isStringArray(arr: unknown): arr is string[]{
+
+// }
